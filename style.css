@@ -1,0 +1,50 @@
+/* Basic Navbar Styling */
+.navbar {
+    background-color: #333;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    position: relative; /* Needed for absolute positioning of dropdown */
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #555;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show on hover */
+}
