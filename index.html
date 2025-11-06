@@ -6,23 +6,24 @@
      <link rel="stylesheet" href="style.css">
    </head>
    <body>
-     <h1>
-       Debater Pro
-   </h1>
-     <div class="AffCases">
-  <button onclick="myFunction()" class="dropbtn">AffCases</button>
-  <div id="AffCases" class="dropdown-content">
-    <a href="#">Case 1</a>
-    <a href="#">Case 2</a>
-    <a href="#">Case 3</a>
+     <h1> Debater Pro </h1>
+     <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Aff Case</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Aff Case 1</a>
+    <a href="#about">Aff Case 2</a>
+    <a href="#contact">Aff Case 3</a>
   </div>
-       /* When the user clicks on the button,
+</div>
+
+<script>
+/* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
+// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -35,7 +36,9 @@ window.onclick = function(event) {
     }
   }
 }
-</div>
+</script>
+     
+
      <button type="button">Neg Case Read</button>
      
 
